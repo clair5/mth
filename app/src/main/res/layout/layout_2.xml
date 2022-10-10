@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".beaconScanner">
+
+    <LinearLayout
+        android:layout_width="241dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:fontFamily="@font/pon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#0A0000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:fontFamily="@font/pon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:fontFamily="@font/pon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#040000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:fontFamily="@font/pon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#030000"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bibi"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="메인화면" />
+
+            <Button
+                android:id="@+id/StartScanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Scan" />
+
+            <Button
+                android:id="@+id/StopScanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="stop" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
