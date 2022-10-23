@@ -1,12 +1,11 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
     buildToolsVersion '23.0.3'
 
     defaultConfig {
-        applicationId "com.example.caps"
+        applicationId "com.example.mth"
         minSdkVersion 29
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 23
@@ -27,6 +26,9 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -41,8 +43,6 @@ dependencies {
     implementation 'junit:junit:4.12'
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:23.3.0'
-    implementation 'com.google.firebase:firebase-database:19.5.1'
-    implementation 'com.google.firebase:firebase-firestore:22.0.0'
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.akexorcist:bluetoothspp:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
@@ -55,4 +55,6 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
 }
