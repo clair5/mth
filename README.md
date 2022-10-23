@@ -8,6 +8,7 @@
 - 동한 
 - 형석 
 
+<a href="/" style="text-decoration:underline>
 
 <h1> 프로젝트 관련 소개 </h1>
 
